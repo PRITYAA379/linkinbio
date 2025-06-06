@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Links</title>
+    <title>My Link in Bio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,37 +11,42 @@
     <div class="container">
         <div class="profile">
             <div class="profile-img-container">
-                <img src="https://i.ibb.co/hJ0v0Hxr/IMG-9691.jpg" alt="Profile Picture" class="profile-img">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-img">
             </div>
             <h1>@YourUsername</h1>
-            <p class="bio">Digital Creator | Web Developer | Content Writer</p>
+            <p class="bio">Welcome to my links!</p>
         </div>
         
         <div class="links">
-            <a href="#" class="link">
-                <i class="fas fa-globe"></i> My Website
-            </a>
-            <a href="#" class="link">
+            <a href="https://youtube.com" class="link">
                 <i class="fab fa-youtube"></i> YouTube
             </a>
-            <a href="#" class="link">
+            <a href="https://instagram.com" class="link">
                 <i class="fab fa-instagram"></i> Instagram
             </a>
-            <a href="#" class="link">
+            <a href="https://github.com" class="link">
                 <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://twitter.com" class="link">
+                <i class="fab fa-twitter"></i> Twitter
             </a>
         </div>
         
         <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
             <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
             <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
             <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
         </div>
         
         <footer>
-            © 2023 My Links | All Rights Reserved
+            © <span id="year"></span> My Links | All Rights Reserved
         </footer>
     </div>
+
+    <script>
+        // Auto-update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
